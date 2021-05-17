@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdlib>
 #include <string>
 #include <vector>
 
@@ -6,7 +7,8 @@ enum SlotsSymbols {
     BELL,                           
     CHERRY, GRAPE, LEMON, MELON,
     BAR, SEVEN,
-    SPIN
+    SPIN,
+    NUM_SYMBOLS
 };
 
 struct SlotsRows {
@@ -14,9 +16,9 @@ struct SlotsRows {
     ///Spin Slot Row
     void Spin();
     
-    SlotsSymbols top;
-    SlotsSymbols mid;
-    SlotsSymbols btm;
+    SlotsSymbols r_Top;
+    SlotsSymbols r_Mid;
+    SlotsSymbols r_Btm;
 };
 
 ///Need 10 Coins to Play
